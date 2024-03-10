@@ -14,7 +14,6 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 
 @Module
 class SolanaProjectModule {
-
     @Provides
     fun providesSharedPrefs(@ApplicationContext context: Context): SharedPreferences {
         return context.getSharedPreferences("scaffold_prefs", Context.MODE_PRIVATE)
